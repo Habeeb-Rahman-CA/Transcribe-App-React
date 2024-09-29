@@ -22,6 +22,10 @@ h1, h2, h3, .bold{
   flex-direction: column;
 }
 
+button{
+  transition: all 0.3s ease;
+}
+
 
 header{
   display: flex;
@@ -51,6 +55,10 @@ header .new-btn{
   font-weight: 600;
 }
 
+header .new-btn:hover{
+  color: #2569c2;
+}
+
 main{
   display: flex;
   flex-direction: column;
@@ -78,4 +86,87 @@ main h3 span{
   color: #2569c2;
 }
 
+main .record-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 20px;
+  box-shadow: rgba(14, 35, 58, 0.192) 0px 2px 8px 0px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #7c92bf;
+  width: 15%;
+  font-weight: 600;
+  cursor: pointer;
+}
 
+main .record-btn i{
+  color: #0b2559;
+}
+
+main p{
+  margin-top: 20px;
+  font-weight: 600;
+  color: #0b2559;
+}
+
+main p .hidden{
+  display: none;
+}
+
+main p .label-up{
+  cursor: pointer;
+  color: #2569c2;
+}
+
+main p .label-up:hover{
+  color: #76a3fc;
+}
+
+.file-detail{
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.file-btns{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.file-btns button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 20px;
+  box-shadow: rgba(14, 35, 58, 0.192) 0px 2px 8px 0px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 150px;
+}
+
+.file-btns .reset-btn{
+  color: #818181;
+}
+
+.file-btns .trans-btn{
+  color: #0b2559;
+}
+
+.file-btns .reset-btn:hover{
+  color: #e43c3c;
+}
+
+.file-btns .trans-btn:hover{
+  color: #6599ff;
+}
