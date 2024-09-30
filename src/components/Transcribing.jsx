@@ -9,10 +9,10 @@ const Transcribing = (props) => {
                 <h1>Transcribing</h1>
                 <p>{!downloading ? 'warming up cylinder' : 'core cylinder engaged'}</p>
             </div>
-            <div>
+            <div className="loader">
                 {[0, 1, 2].map(val => {
                     return (
-                        <div key={val} className={"loading" + `loading${val}`}></div>
+                        <div key={val} className={`loading loading${val}`}></div>
                     )
                 })}
             </div>
