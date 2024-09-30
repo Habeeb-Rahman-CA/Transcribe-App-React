@@ -1,55 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1, h2, h3, .bold{
+h1,
+h2,
+h3,
+.bold {
   font-family: 'Poppins', sans-serif;
 }
 
-#root{
+#root {
   background-color: #fafdff;
   min-height: 100vh;
 }
 
-.app{
+.app {
   display: flex;
   flex-direction: column;
 }
 
-.red{
+.red {
   color: #e43c3c !important;
 }
 
-button{
+button {
   transition: all 0.3s ease;
 }
 
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
 
-header h1{
+header h1 {
   color: #0b2559;
 }
 
-header h1 span{
+header h1 span {
   color: #2569c2;
 }
 
-header .new-btn{
+header .new-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:8px;
+  gap: 8px;
   border: none;
   outline: none;
   background-color: transparent;
@@ -59,11 +62,11 @@ header .new-btn{
   font-weight: 600;
 }
 
-header .new-btn:hover{
+header .new-btn:hover {
   color: #2569c2;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,26 +74,28 @@ main{
   padding-top: 200px;
 }
 
-main h1{
+main h1 {
   font-size: 58px;
   font-weight: 700;
   color: #0b2559;
 }
 
-main h1 span{
+main h1 span {
   color: #2569c2;
 }
-main h3{
+
+main h3 {
   display: flex;
   gap: 4px;
   text-align: center;
   color: #0b2559;
 }
-main h3 span{
+
+main h3 span {
   color: #2569c2;
 }
 
-main .record-btn{
+main .record-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,43 +115,43 @@ main .record-btn{
   cursor: pointer;
 }
 
-main .record-btn i{
+main .record-btn i {
   color: #0b2559;
 }
 
-main p{
+main p {
   margin-top: 20px;
   font-weight: 600;
   color: #0b2559;
 }
 
-main p .hidden{
+main p .hidden {
   display: none;
 }
 
-main p .label-up{
+main p .label-up {
   cursor: pointer;
   color: #2569c2;
 }
 
-main p .label-up:hover{
+main p .label-up:hover {
   color: #76a3fc;
 }
 
-.file-detail{
+.file-detail {
   display: flex;
   gap: 10px;
   align-items: baseline;
 }
 
-.file-btns{
+.file-btns {
   display: flex;
   align-items: center;
   margin-top: 20px;
   gap: 20px;
 }
 
-.file-btns button{
+.file-btns button {
   border: none;
   outline: none;
   background-color: transparent;
@@ -159,30 +164,42 @@ main p .label-up:hover{
   width: 150px;
 }
 
-.file-btns .reset-btn{
+.file-btns .reset-btn {
   color: #818181;
 }
 
-.file-btns .trans-btn{
+.file-btns .trans-btn {
   color: #0b2559;
 }
 
-.file-btns .reset-btn:hover{
+.file-btns .reset-btn:hover {
   color: #e43c3c;
 }
 
-.file-btns .trans-btn:hover{
+.file-btns .trans-btn:hover {
   color: #6599ff;
 }
 
-.record-btn .timeline{
+.record-btn .timeline {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
 
-.record-btn .timeline p{
+.record-btn .timeline p {
   margin-top: -1px;
   font-size: 14px;
+}
+
+.transcribing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.transcribing .scribe-head h1 {
+  color: #2569c2;
 }

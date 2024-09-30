@@ -10,14 +10,14 @@ function App() {
 
   const isAudioAvailable = file || audioStream
 
-const handleAudioReset = () =>{
-  setFile(null)
-  setAudioStream(null)
-}
+  const handleAudioReset = () => {
+    setFile(null)
+    setAudioStream(null)
+  }
 
-useEffect(() =>{
-  console.log(audioStream);
-}, [audioStream])
+  useEffect(() => {
+    console.log(audioStream);
+  }, [audioStream])
 
   return (
     <div className="app">
