@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Header from "./components/Header"
 import HomePage from "./components/HomePage"
 import FileDisplay from "./components/FileDisplay"
@@ -15,11 +15,15 @@ const handleAudioReset = () =>{
   setAudioStream(null)
 }
 
+useEffect(() =>{
+  console.log(audioStream);
+}, [audioStream])
+
   return (
     <div className="app">
       <section>
         <Header />
-        {isAudioAvailable ? (<FileDisplay handleAudioReset={handleAudioReset} file={file} audioStream={audioStream} />) : (<HomePage setFile={setFile} setAudioStream={setAudioStream} />)}
+        {isAudioAvailable ? (<FileDisplay handleAudioReset={handleAudioReset} file={file} audioStream={setAudioStream} />) : (<HomePage setFile={setFile} setAudioStream={setAudioStream} />)}
       </section>
       <footer>
 
