@@ -247,3 +247,27 @@ main p .label-up:hover {
   90%{ width: 76%;}
   100%{ width: 100%;}
 }
+
+.btns {
+  display: flex;
+  margin-top: 20px;
+  box-shadow: rgba(14, 35, 58, 0.192) 0px 2px 8px 0px;;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btns .scribe-btn,
+.btns .trnsltn-btn{
+  border: none;
+  color: #0b2559;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 40px;
+}
+
