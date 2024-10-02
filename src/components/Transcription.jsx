@@ -1,7 +1,11 @@
 
-const Transcription = () => {
+const Transcription = (props) => {
+
+  const {output} = props
+  
+
   return (
-    <div></div>
+    <div>{output}</div>
   )
 }
 

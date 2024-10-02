@@ -1,7 +1,7 @@
 
 const FileDisplay = (props) => {
 
-  const { handleAudioReset, file, audioStream } = props
+  const { handleAudioReset, file, audioStream, handleFormSubmission } = props
 
   return (
     <main>
@@ -12,7 +12,7 @@ const FileDisplay = (props) => {
       </div>
       <div className='file-btns'>
         <button className='reset-btn' onClick={handleAudioReset}>Reset</button>
-        <button className='trans-btn'>Transcribe <i className="fa-solid fa-pen-nib"></i></button>
+        <button onClick={handleFormSubmission} className='trans-btn'>Transcribe <i className="fa-solid fa-pen-nib"></i></button>
       </div>
     </main>
   )
