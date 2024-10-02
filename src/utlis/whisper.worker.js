@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { MessageTypes } from './presets';  // Assuming you have this already
+import { MessageTypes } from './presets';
 
 class MyTranscriptionPipeline {
     static apiKey = 'YOUR_GOOGLE_CLOUD_API_KEY';

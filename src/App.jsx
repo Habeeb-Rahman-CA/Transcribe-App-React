@@ -54,11 +54,11 @@ function App() {
     worker.current.addEventListener('message', onMessageReceived)
 
     return () => worker.current.removeEventListener('message', onMessageReceived)
-  },[])
+  }, [])
 
   async function readAudioFrom(file) {
     const sampling_rate = 16000
-    const audioCTX = new AudioContext({sampleRate: sampling_rate})
+    const audioCTX = new AudioContext({ sampleRate: sampling_rate })
     const response = await file.arrayBuffer()
     const decoded = await audioCTX.decodeAudioData(response)
     const audio = decoded.getChannelData(0)
@@ -66,7 +66,7 @@ function App() {
   }
 
   async function handleFormSubmission() {
-    if (!file && !audioStream) {return}
+    if (!file && !audioStream) { return }
 
     let audio = await readAudioFrom(file ? file : audioStream)
     const model_name = `openai/whisper.tiny.en`
