@@ -1,4 +1,3 @@
-
 const FileDisplay = (props) => {
 
   const { handleAudioReset, file, audioStream, handleFormSubmission } = props

@@ -1,4 +1,3 @@
-
 const Transcribing = (props) => {
 
     const { downloading } = props

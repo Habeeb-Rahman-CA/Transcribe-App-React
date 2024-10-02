@@ -1,7 +1,6 @@
-
 const Translation = (props) => {
 
-const {output} = props
+  const { output } = props
 
   return (
     <div>{output}</div>

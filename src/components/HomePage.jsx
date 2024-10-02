@@ -70,7 +70,6 @@ const HomePage = (props) => {
         return () => clearInterval(interval)
     })
 
-
     return (
         <main>
             <h1>Trans<span>Lang</span></h1>

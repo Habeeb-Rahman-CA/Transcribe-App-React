@@ -4,7 +4,7 @@ import Translation from "./Translation"
 
 const Information = (props) => {
 
-    const {output} = props
+    const { output } = props
     const [tab, setTab] = useState('transcription')
 
     return (
